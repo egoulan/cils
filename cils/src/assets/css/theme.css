@@ -379,12 +379,14 @@ fieldset[disabled] a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #505050;
-  border-color: #505050; }
+  font-style: bold;
+ }
   .btn-secondary:hover {
     color: #fff;
-    background-color: #3d3d3d;
-    border-color: #373737; }
+    font-size: 1.2rem;
+    font-style: bold;
+    color: rgb(247, 237, 192);
+  }
   .btn-secondary:focus, .btn-secondary.focus {
     box-shadow: 0 0 0 3px rgba(80, 80, 80, 0.5); }
   .btn-secondary.disabled, .btn-secondary:disabled {
@@ -4511,6 +4513,10 @@ a.bg-dark:focus, a.bg-dark:hover {
 .m-4 {
   margin: 2.25rem !important; }
 
+.mt-max{
+  margin-top: 14.25rem !important;
+}
+
 .mt-4,
 .my-4 {
   margin-top: 2.25rem !important; }
@@ -5531,7 +5537,7 @@ a.text-danger:focus, a.text-danger:hover {
   color: #f8f9fa !important; }
 
 a.text-light:focus, a.text-light:hover {
-  color: #dae0e5 !important; }
+  color: rgb(247, 237, 192) !important; }
 
 .text-dark {
   color: #202020 !important; }
@@ -5598,7 +5604,7 @@ body > * {
     left: 0px;
     top: 0px;
     pointer-events: none;
-    background: rgba(32, 32, 32, 0.5); }
+    background: rgba(32, 32, 32, 0.4); }
 
 .bg-dark-opaque {
   background: rgba(27, 32, 33, 0.6); }
@@ -5608,7 +5614,7 @@ body > * {
 
 .btn.btn-outline-light:hover {
   color: #202020;
-  background-color: #f8f9fa; }
+  background-color: rgb(247, 237, 192); }
 
 .btn.btn:active, .btn .btn.active {
   color: #202020;
@@ -5680,7 +5686,7 @@ body > * {
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 /* Set a specific color for each brand */

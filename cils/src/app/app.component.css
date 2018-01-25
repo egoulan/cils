@@ -1,13 +1,14 @@
-#logo {
+#dmcils {
     color: rgb(247, 237, 192);
     font-family: "Edwardian";
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
 #soustitre {
     font-family: "Edwardian";
-    font-size: 2rem;
+    font-size: 3rem;
 }
+
 
 @font-face {
 	font-family: "Snell Roundhand";
