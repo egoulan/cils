@@ -1,7 +1,19 @@
 #dmcils {
     color: rgb(247, 237, 192);
     font-family: "Edwardian";
-    font-size: 8rem;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+@media (min-width: 576px) {
+    #dmcils {
+        font-size: 8rem;   
+    }
+}
+
+#dmcils2 {
+    font-family: "Edwardian";
+    font-size: 3rem;
 }
 
 #soustitre {
@@ -9,6 +21,24 @@
     font-size: 3rem;
 }
 
+#div_vol_russe {
+    border: 0.7px solid;
+    padding: 15px;
+}
+
+#div_cil_a_cil {
+    border: 0.7px solid;
+    padding: 15px;
+}
+
+#div_vol_russe:hover {
+    background-color: rgba(247, 237, 192, 0.4);
+    
+}
+
+#div_cil_a_cil:hover {
+    background-color: rgba(247, 237, 192, 0.4);
+}
 
 @font-face {
 	font-family: "Snell Roundhand";
