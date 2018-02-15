@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
+
+import { AppService } from './app.service';
 
 import { AppComponent } from './app.component';
 
@@ -11,9 +15,13 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    Ng2PageScrollModule
+    Ng2PageScrollModule,
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    AppService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

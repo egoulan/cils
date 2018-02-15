@@ -2,7 +2,7 @@
     color: rgb(247, 237, 192);
     font-family: "Edwardian";
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 5.5rem;
 }
 
 @media (min-width: 576px) {
@@ -13,7 +13,7 @@
 
 #dmcils2 {
     font-family: "Edwardian";
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #soustitre {
@@ -42,4 +42,27 @@
 	src: url('../assets/fonts/edwardian/edwardian.ttf');
 }
 
+#comment{
+    height: 300px;
+    padding-top: 0;
+}
 
+#textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0rem;
+    resize: none;
+
+}
+
+.labeltop{
+    margin-top: .5rem;
+}
