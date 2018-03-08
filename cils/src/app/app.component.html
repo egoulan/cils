@@ -317,7 +317,6 @@
     <div class="row">
       <div class="col-md-2"> </div>
       <div class="col-lg-8 p-3 animate-in-down">
-<<<<<<< HEAD
         <!--<form id="contact-form" method="POST" action="assets/email.php">-->
 <!-- <form (submit)="sendEmail(message)">
     <div>
@@ -335,15 +334,11 @@
     <button type="submit">Send Email</button>
   </form> -->
         <form class="p-4 bg-dark-opaque" (submit)="sendEmail(message)">
-=======
-        <form class="p-4 bg-dark-opaque" method="post" action="/email">
->>>>>>> 71ea017da6437c57e0e89f9d3dbfd7722192024c
           <h3 class="mb-4 text-center">Contactez-nous</h3>
           <p class="my-4">Contactez-nous pour réserver une séance de pose d'extension de cils ou simplement pour obtenir des informations
             plus précises sur nos différentes prestations</p>
           <div class="form-group">
             <label class="labeltop">Nom</label>
-<<<<<<< HEAD
             <input class="form-control" placeholder="Nom" [(ngModel)]="message.name" [ngModelOptions]="{standalone:
               true}" required>
           </div>
@@ -356,17 +351,6 @@
             <textarea id="textarea"name="Text1" cols="40" rows="8" placeholder="Entrez votre demande ici" [(ngModel)]="message.message" [ngModelOptions]="{standalone:
               true}" required></textarea>
            <input id="comment" type="text" class="form-control" placeholder="Entrez votre demande ici">
-=======
-            <input class="form-control" placeholder="Nom">
-          </div>
-          <div class="form-group">
-            <label class="labeltop">Email</label>
-            <input type="email" class="form-control" placeholder="Email"> </div>
-          <div class="form-group">
-            <label class="labeltop">Sujet</label>
-            <textarea id="textarea"name="Text1" cols="40" rows="8" placeholder="Entrez votre demande ici"></textarea>
-            <!-- <input id="comment" type="text" class="form-control" placeholder="Entrez votre demande ici">  -->
->>>>>>> 71ea017da6437c57e0e89f9d3dbfd7722192024c
           </div>
           <button type="submit" class="btn mt-4 btn-block p-2 btn-outline-primary">
             <b>Envoyer</b>
