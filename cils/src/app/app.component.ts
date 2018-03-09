@@ -11,6 +11,8 @@ export class AppComponent {
   title = 'DM cils';
   message: IMessage = {};
 
+  messageEmail = '';
+
   constructor(private appService : AppService){
 
   }
@@ -19,8 +21,11 @@ export class AppComponent {
     console.log(message.email + message.message +message.name);
     this.appService.sendEmail(message).subscribe(res => {
       console.log('success', res);
+      this.messageEmail = 'Email envoyé avec succès. Vous allez recevoir une réponse dans un bref délais.';
+
     }, error => {
       console.log('error', error);
+      this.messageEmail = 'Echec d\'envoi du mail, veuillez-nous contacter par Facebook ou Instragram s\'il vous plaît.';
     })
   }
 }
