@@ -14,7 +14,7 @@ if(empty($errors))
 	$message = $request->message;
 	$from_name = $request->name;
  
-	$to_email = $from_email;
+	$to_email = 'dmcils.pro@gmail.com';
  
 	$contact = "<p><strong>Name:</strong> $from_name</p>
 							<p><strong>Email:</strong> $from_email</p>";
