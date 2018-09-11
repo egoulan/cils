@@ -1,5 +1,5 @@
 #dmcils {
-    color: rgb(247, 237, 192);
+    color: rgb(226, 207, 120);
     font-family: "Edwardian";
     text-align: center;
     font-size: 5.5rem;
@@ -24,14 +24,14 @@
 
 #div_vol_russe, #div_cil_a_cil, #div_remplissage {
     border: 0.7px solid;
-    border-color:  rgb(247, 237, 192);
+    border-color:rgb(226, 207, 120);
     padding: 15px;
     text-align: center;
     display: inline-block;
 
 }
 
-/* #div_vol_russe:hover, #div_cil_a_cil:hover, #div_remplissage:hover {
+/* #div_vol_russe:, #div_cil_a_cil:, #div_remplissage: {
     background-color: rgba(146, 30, 9, 0.212);
 } */
 
@@ -96,7 +96,7 @@
 .titreTarif {
     font-family: "Edwardian";
     font-size: 2rem;
-    color: rgb(247, 237, 192);
+    color: rgb(226, 207, 120);
     border: 0.7px solid;
     border-left: 0;
     border-right: 0;
@@ -112,7 +112,7 @@
 .edwardian-white-4 {
     font-family: "Edwardian";
     font-size: 4rem;
-    color:  rgb(247, 237, 192);
+    color: rgb(226, 207, 120);
 }
 
 .duree {
@@ -123,13 +123,37 @@
     font-family: "Univ-Roman";
     font-size: 1.5rem;
     margin-top: 10px;
-    color: rgb(247, 237, 192);
+    color: rgb(226, 207, 120);
     margin-top: auto;
     margin-bottom: auto;
 }
 
 .smallIcon {
-    font-size: 20px;
+    font-size: 0.8em;
     width: 30px;
+    /* font-weight: bold; */
 }
- 
+
+.price {
+    font-size: 1.0em;
+    font-weight: bold;
+}
+.cover {
+    min-height: 100%;
+}
+
+.black {
+    background-color: black;
+}
+
+.navbar-btn {
+    font-weight: bold;
+}
+
+#contactezNousButton:hover {
+    font-weight: bold;
+}
+
+.navbar-ontop {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
