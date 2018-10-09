@@ -10,11 +10,11 @@ if(empty($errors))
 	$postdata = file_get_contents("php://input");
 	$request = json_decode($postdata);
  
-	$from_email = $request->email;
+	$from_email = $request->emailSource;
 	$message = $request->message;
 	$from_name = $request->name;
  
-	$to_email = 'dmcils.pro@gmail.com';
+	$to_email = "egoulan@gmail.com";
  
 	$contact = "<p><strong>Name:</strong> $from_name</p>
 							<p><strong>Email:</strong> $from_email</p>";

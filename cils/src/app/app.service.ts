@@ -1,16 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-import { Resolve } from '@angular/router';
-import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs/Observable';
+import { Message } from './message';
  
-export interface IMessage {
-  name?: string,
-  email?: string,
-  message?: string
-}
- 
+
 @Injectable()
 export class AppService {
   private emailUrl = '/assets/email.php';
@@ -19,7 +14,7 @@ export class AppService {
  
   }
  
-  sendEmail(message: IMessage): Observable<IMessage> | any {
+  sendEmail(message: Message): Observable<Message> | any {
     return this.http.post(this.emailUrl, message)
       .map(response => {
         console.log('Sending email was successfull', response);

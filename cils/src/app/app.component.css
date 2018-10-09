@@ -157,3 +157,13 @@
 .navbar-ontop {
     background-color: rgba(0, 0, 0, 0.2) !important;
 }
+
+#formulaireDeContact input {
+    color: black;
+    font-weight: bold;
+} 
+
+#formulaireDeContact textarea {
+    color: black;
+    font-weight: bold;
+} 

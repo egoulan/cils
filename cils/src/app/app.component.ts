@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { AppService, IMessage } from './app.service';
-import { error } from 'util';
+import { AppService } from './app.service';
+import { Message } from './message';
+import { Constantes } from './constantes';
 
 @Component({
   selector: 'app-root',
@@ -9,20 +10,20 @@ import { error } from 'util';
 })
 export class AppComponent {
   title = 'DM cils';
-  message: IMessage = {};
+  message: Message = {};
 
   messageEmail = '';
 
-  constructor(private appService : AppService){
+  constructor(private appService: AppService) {
 
   }
 
-  sendEmail(message : IMessage){
-    console.log(message.email + message.message +message.name);
+  sendEmail(message: Message) {
+    message.emailSource = Constantes.email;
+    console.log(message.emailSource + message.message + message.name);
     this.appService.sendEmail(message).subscribe(res => {
       console.log('success', res);
       this.messageEmail = 'Email envoyé avec succès. Vous allez recevoir une réponse dans un bref délais.';
-
     }, error => {
       console.log('error', error);
       this.messageEmail = 'Echec d\'envoi du mail, veuillez-nous contacter par Facebook ou Instragram s\'il vous plaît.';

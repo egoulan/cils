@@ -1,3 +1,3 @@
 export enum Constantes {
-    email = "dmcils.pro@gmail.com"
+    email = 'egoulan@gmail.com'
 }
